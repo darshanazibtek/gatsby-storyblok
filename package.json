@@ -1,0 +1,25 @@
+{
+  "name": "gats-story",
+  "version": "1.0.0",
+  "private": true,
+  "description": "gats-story",
+  "author": "Darshana",
+  "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 8000 --cert localhost.pem --key localhost-key.pem",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "develop": "ENABLE_GATSBY_REFRESH_ENDPOINT=true gatsby develop"
+  },
+  "dependencies": {
+    "gatsby": "^4.0.0",
+    "gatsby-source-storyblok": "^4.2.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "storyblok-js-client": "^5.2.5"
+  }
+}
